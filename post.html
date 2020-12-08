@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes-App</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+
+    <style type="text/css">
+        .img-container {
+            max-width: 600px;
+        }
+
+        img {
+            width: 100%
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-wrapper">
+
+        <!-- Link around dots-wrapper added after tutorial video -->
+        <a href="index.html">
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="main-container">
+        <br>
+
+        <div class="img-container">
+            <img src="images/project1.jpeg">
+        </div>
+
+        <h3>Serverless Note Taking App</h3>
+        <a target="_blank" href="https://github.com/jimil749/serverless-stack-notes-api">Github Link</a>
+
+        <p>This was a project I started in May 2020 when I was just getting started with NodeJS and AWS-Serverless. This
+            was a personal project to get a gist of AWS-Serverless stack.
+            <br>
+            <br>
+            User Authentication is achieved by using Amazon Cognito User Pool service, which essentially
+            stores the login info and access control is achieved by Cognito Identity Pool.
+            <br>
+            <br>
+            Users can create, update, delete or even attach files along with their notes, which are directly
+            uploaded to Amazon S3 Buckets.
+            <br>
+            <br>
+            Customers also have the ability to buy storage space for their notes. The user can select the number of
+            notes to store and add his credit card credentials to pay online.
+            <br>
+            <br>
+            The application is deployed using Netlify CI/CD.
+
+        <h5>Technologies:</h5>
+        <ul>
+            <li>- NodeJS</li>
+            <li>- ReactJS</li>
+            <li>- AWS (S3 & Serverless)</li>
+            <li>- Stripe Billing API</li>
+        </ul>
+
+
+        <h5>Login Interface</h5>
+        <div class="img-container">
+            <img src="images/serverless-4.png">
+        </div>
+
+        <h6>Adding Notes</h5>
+            <div class="img-container">
+                <img src="images/serverless-1.png">
+            </div>
+
+            <h5>Billing Interface</h5>
+            <div class="img-container">
+                <img src="images/Serverless-3.png">
+            </div>
+
+            <h5>Backend Architecture</h5>
+            <div class="img-container">
+                <img src="images/arch.png">
+            </div>
+
+
+    </div>
+
+</body>
+
+</html>
